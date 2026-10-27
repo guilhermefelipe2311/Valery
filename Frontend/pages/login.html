@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Login | Valery
+    </title>
+
+    <link rel="stylesheet"
+          href="../assets/css/login.css">
+
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <form class="login-box"
+              onsubmit="fazerLogin(event)">
+
+            <h1>
+                Login
+            </h1>
+
+
+            <!-- EMAIL -->
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Seu email"
+                required
+            >
+
+
+
+            <!-- SENHA -->
+
+            <div class="senha-box">
+
+                <input
+                    type="password"
+                    id="senha"
+                    placeholder="Sua senha"
+                    required
+                >
+
+                <span onclick="toggleSenha()">
+
+                    👁️
+
+                </span>
+
+            </div>
+
+
+
+            <!-- BOTÃO -->
+
+            <button type="submit">
+
+                Entrar
+
+            </button>
+
+
+
+            <!-- CADASTRO -->
+
+            <p>
+
+                Não possui conta?
+
+                <a href="cadastro.html">
+
+                    Criar conta
+
+                </a>
+
+            </p>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- JS -->
+
+    <script src="../assets/js/login.js"></script>
+
+</body>
+
+</html>

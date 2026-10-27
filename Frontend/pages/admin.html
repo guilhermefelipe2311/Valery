@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Admin | Valery
+    </title>
+
+    <link rel="stylesheet"
+          href="../assets/css/admin.css">
+
+</head>
+
+<body>
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <h1>
+            Valery
+        </h1>
+
+        <nav>
+
+            <a href="#dashboard">
+                Dashboard
+            </a>
+
+            <a href="#produtos">
+                Produtos
+            </a>
+
+            <a href="#pedidos">
+                Pedidos
+            </a>
+
+        </nav>
+
+
+        <!-- BOTÃO SAIR -->
+
+        <button class="btn-sair"
+                onclick="sair()">
+
+            Sair
+
+        </button>
+
+    </aside>
+
+
+
+    <!-- CONTEÚDO -->
+
+    <main class="conteudo">
+
+
+        <!-- DASHBOARD -->
+
+        <section id="dashboard">
+
+            <div class="dashboard-cards">
+
+
+                <!-- PRODUTOS -->
+
+                <div class="dashboard-card">
+
+                    <h3>
+                        Produtos
+                    </h3>
+
+                    <span id="total-produtos">
+
+                        0
+
+                    </span>
+
+                </div>
+
+
+
+                <!-- PEDIDOS -->
+
+                <div class="dashboard-card">
+
+                    <h3>
+                        Pedidos
+                    </h3>
+
+                    <span id="total-pedidos">
+
+                        0
+
+                    </span>
+
+                </div>
+
+
+
+                <!-- USUÁRIOS -->
+
+                <div class="dashboard-card">
+
+                    <h3>
+                        Usuários
+                    </h3>
+
+                    <span id="total-usuarios">
+
+                        0
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PRODUTOS -->
+
+        <section id="produtos">
+
+
+            <h2>
+                Cadastrar Produto
+            </h2>
+
+
+            <div class="form-produto">
+
+
+                <input type="text"
+                       id="nome"
+                       placeholder="Nome Produto">
+
+
+                <input type="text"
+                       id="descricao"
+                       placeholder="Descrição">
+
+
+                <input type="number"
+                       id="preco"
+                       placeholder="Preço">
+
+
+                <input type="number"
+                       id="quantidade"
+                       placeholder="Quantidade">
+
+
+                <input type="text"
+                       id="imagemUrl"
+                       placeholder="URL da imagem">
+
+
+
+                <button onclick="cadastrarProduto()">
+
+                    Cadastrar Produto
+
+                </button>
+
+            </div>
+
+
+
+            <!-- LISTA PRODUTOS -->
+
+            <div id="lista-admin"
+                 class="lista-admin">
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PEDIDOS -->
+
+        <section id="pedidos">
+
+            <h2>
+                Pedidos
+            </h2>
+
+
+            <div id="lista-pedidos"
+                 class="lista-pedidos">
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- JS -->
+
+    <script src="../assets/js/admin.js"></script>
+
+</body>
+
+</html>

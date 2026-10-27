@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Cadastro | Valery
+    </title>
+
+    <link rel="stylesheet"
+          href="../assets/css/login.css">
+
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <form class="login-box"
+              onsubmit="cadastrar(event)">
+
+            <h1>
+                Criar Conta
+            </h1>
+
+
+            <!-- NOME -->
+
+            <input
+                type="text"
+                id="nome"
+                placeholder="Digite seu nome"
+                required
+            >
+
+
+            <!-- EMAIL -->
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Digite seu email"
+                required
+            >
+
+
+            <!-- SENHA -->
+
+            <div class="senha-box">
+
+                <input
+                    type="password"
+                    id="senha"
+                    placeholder="Digite sua senha"
+                    required
+                >
+
+                <span
+                    class="olho"
+                    onclick="toggleSenha()">
+
+                    👁️
+
+                </span>
+
+            </div>
+
+
+            <!-- BOTÃO -->
+
+            <button type="submit">
+
+                Cadastrar
+
+            </button>
+
+
+            <!-- LOGIN -->
+
+            <p>
+
+                Já possui conta?
+
+                <a href="login.html">
+
+                    Fazer login
+
+                </a>
+
+            </p>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- JS -->
+
+    <script src="../assets/js/cadastro.js"></script>
+
+</body>
+
+</html>

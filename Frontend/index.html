@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Valery
+    </title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="assets/css/style.css">
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+
+        <div class="logo">
+
+            Valery
+
+        </div>
+
+
+
+        <nav class="menu">
+
+            <a href="#">
+                Início
+            </a>
+
+            <a href="#produtos">
+                Coleção
+            </a>
+
+            <a href="#sobre">
+                Sobre
+            </a>
+
+            <a href="#contato">
+                Contato
+            </a>
+
+            <a href="pages/carrinho.html">
+                Carrinho
+            </a>
+
+
+            <!-- LOGIN / PERFIL -->
+
+            <a id="btn-login"
+               href="pages/login.html">
+
+                Login
+
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+
+
+    <!-- BANNER -->
+
+    <section class="banner">
+
+        <div class="banner-texto">
+
+            <h1>
+
+                Elegância em cada detalhe
+
+            </h1>
+
+
+            <p>
+
+                Descubra colares exclusivos
+                para transformar seu estilo.
+
+            </p>
+
+
+            <button onclick="window.location.href='#produtos'">
+
+                Ver Coleção
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- PRODUTOS -->
+
+    <section class="produtos"
+             id="produtos">
+
+        <h2>
+
+            Nossos Produtos
+
+        </h2>
+
+
+
+        <!-- LISTA PRODUTOS -->
+
+        <div id="lista-produtos"
+             class="lista-produtos">
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- SOBRE -->
+
+    <section id="sobre"
+             class="produtos">
+
+        <h2>
+
+            Sobre
+
+        </h2>
+
+
+        <p>
+
+            A Valery é uma marca de acessórios premium
+            focada em luxo e elegância.
+
+        </p>
+
+    </section>
+
+
+
+
+
+    <!-- CONTATO -->
+
+    <section id="contato"
+             class="produtos">
+
+        <h2>
+
+            Contato
+
+        </h2>
+
+
+        <p>
+
+            Email: contato@valery.com
+
+        </p>
+
+
+        <p>
+
+            Instagram: @valery
+
+        </p>
+
+    </section>
+
+
+
+
+
+    <!-- JS -->
+
+    <script src="assets/js/api.js"></script>
+
+    <script src="assets/js/produtos.js"></script>
+
+
+
+    <!-- USUÁRIO LOGADO -->
+
+    <script>
+
+        const usuario =
+            JSON.parse(
+                localStorage.getItem("usuarioLogado")
+            );
+
+
+        const btnLogin =
+            document.getElementById("btn-login");
+
+
+        if (usuario) {
+
+            btnLogin.innerHTML =
+                `Olá, ${usuario.nome}`;
+
+
+            btnLogin.href =
+                "pages/perfil.html";
+        }
+
+    </script>
+
+</body>
+
+</html>
